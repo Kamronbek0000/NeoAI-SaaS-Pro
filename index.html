@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeoAI SaaS Pro</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">⚡️ NeoAI</div>
+
+  <div class="links">
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <button class="btn" onclick="openModal()">Get Started</button>
+</header>
+
+<section class="hero">
+  <h1>Build AI SaaS in Minutes</h1>
+  <p>Modern AI platform with automation & smart tools</p>
+
+  <button class="btn primary" onclick="openModal()">Start Free Trial</button>
+</section>
+
+<section id="features" class="section">
+  <h2>🔥 Features</h2>
+
+  <div class="grid">
+    <div class="card" onclick="selectFeature('AI Automation')">⚡️ AI Automation</div>
+    <div class="card" onclick="selectFeature('Smart Chatbot')">🤖 Smart Chatbot</div>
+    <div class="card" onclick="selectFeature('Analytics')">📊 Analytics</div>
+    <div class="card" onclick="selectFeature('Fast API')">🚀 Fast API</div>
+  </div>
+
+  <p id="featureText"></p>
+</section>
+
+<section id="pricing" class="section">
+  <h2>💰 Pricing</h2>
+
+  <div class="grid">
+    <div class="card" onclick="choosePlan('Free')">Free - $0</div>
+    <div class="card highlight" onclick="choosePlan('Pro')">Pro - $9</div>
+    <div class="card" onclick="choosePlan('Enterprise')">Enterprise - $29</div>
+  </div>
+
+  <p id="planText"></p>
+</section>
+
+<section id="contact" class="section">
+  <h2>📩 Contact</h2>
+  <button class="btn" onclick="showEmail()">Show Email</button>
+  <p id="emailText"></p>
+</section>
+
+<footer>
+  <p>© 2026 NeoAI SaaS</p>
+</footer>
+
+
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <h2>🚀 Start AI Demo</h2>
+
+    <textarea id="input" placeholder="Write prompt..."></textarea>
+
+    <button class="btn primary" onclick="runAI()">Generate</button>
+
+    <p id="output"></p>
+
+    <button class="btn" onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<script src="./main.js"></script>
+</body>
+</html>
