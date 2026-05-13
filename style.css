@@ -21,16 +21,6 @@ body {
   text-decoration: none;
 }
 
-.btn {
-  left:10px
-  padding: 10px 15px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  background: #22c55e;
-  color: white;
-}
-
 .primary {
   background: linear-gradient(135deg,#22c55e,#06b6d4);
 }
